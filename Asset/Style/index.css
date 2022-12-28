@@ -22,7 +22,7 @@ li a{
     text-decoration: none;
     margin-left: 50px;
     color: white;
-    font-weight: bold;
+    font-weight: 400;
 }
 .brand , img{
     width: 50px;
@@ -52,18 +52,41 @@ header{
 #btnmore{
     border: 2px solid;
     padding: 14px 30px;
-    border-radius: 10px;
+    border-radius: 40px;
     border-color: green;
-    width: 30px;
+    width: 40px;
     color:white ;
     position: absolute;
     bottom: 0;
-     text-decoration: none;
-    
-   
+    text-decoration: none;
+    font-weight: bold;
 }
-#btnmore > img{
+/* #btnmore > img{
     width: 20px;
     height: 20px;
  
+} */
+#btnmore:hover{
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 16px 35px;
+    width:50px;
+    background-color: green;
+    transition: all 0.5s;
+}
+
+.container-cards{
+    justify-content: space-between;
+    display: block;
+}
+#tema{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.body-card{
+    height: 300px;
+    width: 100px;
+    background-color: #6B6262;
 }
