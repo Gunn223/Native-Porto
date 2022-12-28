@@ -5,7 +5,9 @@ body{
 nav{
     background-color: #3B708E;
     height: 70px;
-    box-shadow: 12px 2px 8px #000000;
+    box-shadow: 0px 4px 15px #000000;
+    position: sticky;
+    top: 0;
 }
 ul{
     padding: 26px;
@@ -20,6 +22,7 @@ li a{
     text-decoration: none;
     margin-left: 50px;
     color: white;
+    font-weight: bold;
 }
 .brand , img{
     width: 50px;
@@ -29,6 +32,38 @@ li a{
     left: 40px;
 }
 header{
-    height: 880px;
-    width: 100vmin; 
+    
+    background-image: url('../Img/Bg\ header.png');
+    height: 620px;
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+}
+#texth1{
+    font-size: 5rem;   
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    /* font rosario */
+    /* stroke:1px  #000000; */
+   
+}
+#btnmore{
+    border: 2px solid;
+    padding: 14px 30px;
+    border-radius: 10px;
+    border-color: green;
+    width: 30px;
+    color:white ;
+    position: absolute;
+    bottom: 0;
+     text-decoration: none;
+    
+   
+}
+#btnmore > img{
+    width: 20px;
+    height: 20px;
+ 
 }
