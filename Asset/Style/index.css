@@ -7,26 +7,31 @@ body{
 :root{
     --primary-color:#ffff;
     --secondary-color:rgb(136, 130, 130);
-    --btn:#fff;
+    --btn:#cfc510bf;
 }
 .dark{
-    --primary-color:rgb(126, 114, 114);
+    --primary-color:rgb(78, 49, 49);
     --secondary-color:#fff;
-    --btn:#10385e;
+    --btn:#113353;
 }
 .button{
     height: 28px;
     width:50px;
     border: none;
     border-radius: 20px;
-    background-color: var(--btn);
+    background-color:#3B708E;
 }
 #icon{
     font-size: 20px;
+    color: white;
 }
-
+.mode{
+    position: absolute;
+    top: 12px;
+    left: 85%;
+}
 /* end Dark mode */
-
+/* Nav */
 nav{
     background-color: #3B708E;
     height: 50px;
@@ -38,7 +43,7 @@ nav{
 ul{
     margin: 0 ;
     padding: 16px;
-    margin-left: 30%;
+    margin-left:34%;
 }
 li{
     list-style-type: none;
@@ -51,15 +56,16 @@ li a{
     font-weight: 400;
 }
 
-.brand , img{
+.brand{
     width: 40px;
     height: 40px;
     position: absolute;
     top: 4px;
     left: 40px;
 }
+/* End Nav */
+/* Header */
 header{
-    
     background-image: url('../Img/Bg\ header.png');
     height: 620px;
     display: flex;
@@ -72,40 +78,31 @@ header{
     color: white;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    /* font rosario */
-    /* stroke:1px  #000000; */
-   
 }
 #btnmore{
     border: 2px solid;
-    padding: 14px 30px;
-    border-radius: 40px;
+    padding: 10px 20px;
+    border-radius: 15px;
     border-color: green;
-    width: 40px;
-    color:white ;
-    position: absolute;
-    bottom: 0;
+    color:white;
     text-decoration: none;
     font-weight: bold;
-}
-/* #btnmore > img{
-    width: 20px;
-    height: 20px;
- 
-} */
+} 
 #btnmore:hover{
     border: 2px solid;
     border-color: rgb(255, 255, 255);
     color: #000000;
-    padding: 16px 35px;
-    width:50px;
     background-color: green;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
-
+/* End Header */
+/* Cards */
+main{
+    height: 550px;
+}
 .container-cards{
-    justify-content: space-between;
-    display: block;
+display: flex;
+justify-content: space-evenly;
 }
 #tema{
     font-size: 40px;
@@ -113,7 +110,17 @@ header{
     justify-content: center;
 }
 .body-card{
-    height: 300px;
-    width: 100px;
     background-color: #6B6262;
+    width: 220px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 5px;
 }
+#image-card {
+    width:80%;
+   margin:20px;
+}
+.title,#icon-card{
+    margin: 10px;
+}
+/* End Cards */
