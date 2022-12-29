@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--primary-color);
+    box-sizing: border-box;
 }
 /* Dark mode */
 :root{
@@ -19,7 +20,7 @@ body{
     width:50px;
     border: none;
     border-radius: 20px;
-    background-color:#3B708E;
+    background-color:#380a6f;
 }
 #icon{
     font-size: 20px;
@@ -27,27 +28,27 @@ body{
 }
 .mode{
     position: absolute;
-    top: 12px;
-    left: 85%;
+    top: 60px;
+    left: 80%;
 }
 /* end Dark mode */
 /* Nav */
 nav{
-    background-color: #3B708E;
+    background-color: #380a6f;
     height: 50px;
     box-shadow: 0px 4px 15px #000000;
-    position: sticky;
-    top: 0;
-   
 }
 ul{
     margin: 0 ;
     padding: 16px;
-    margin-left:34%;
+    margin-left:20%;
+    display: flex;
 }
 li{
     list-style-type: none;
-    display: inline;
+    position: relative;
+    top: 50px;
+
 }
 li a{
     text-decoration: none;
@@ -55,38 +56,86 @@ li a{
     color: white;
     font-weight: 400;
 }
-
-.brand{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 4px;
-    left: 40px;
+#logo{
+    position: relative;
+    right: 90px;
+    bottom: 4px;
+    font-size: 20px;
+    font-weight: bold;
 }
 /* End Nav */
 /* Header */
 header{
-    background-image: url('../Img/Bg\ header.png');
-    height: 620px;
+    background-color: #380a6f;
+    height: 610px;
     display: flex;
     margin-top: 0;
     justify-content: center;
     align-items: center;
 }
-#texth1{
-    font-size: 5rem;   
-    color: white;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+.content-text{
+    display: flex;
+    margin-bottom: 100px;
+}
+.content-text .text{
+    color: #fff;
+    font-size: 90px;
+}
+.content-text .ubah-text{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 100px;
+    overflow: hidden;
+}
+
+.ubah-text li {
+    list-style-type: none;
+    font-size: 60px;
+    color: #fff;
+    position: relative;
+    right: 12px;
+    top: 0px;
+    animation: geser 12s steps(4) infinite;
+}
+@keyframes geser{
+    100%{
+        top:-400px;
+    }
+}
+.ubah-text span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+.ubah-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 85px;
+    width: 100%;
+    background-color: #380a6f;
+   border-left: 1px solid #ffff;
+   padding: 10px;
+   animation: nulis 3s steps(14) infinite;
+}
+@keyframes nulis{
+    40%,60%{
+        left: calc(100%);
+    }
+    100%{
+        left: 0;
+    }
 }
 #btnmore{
     border: 2px solid;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 15px;
     border-color: green;
     color:white;
     text-decoration: none;
     font-weight: bold;
+    position: absolute;
+    bottom: 50px;
 } 
 #btnmore:hover{
     border: 2px solid;
@@ -98,13 +147,13 @@ header{
 /* End Header */
 /* Cards */
 main{
-    height: 550px;
+    height: 650px;
 }
 .container-cards{
 display: flex;
 justify-content: space-evenly;
 }
-#tema{
+.tema{
     font-size: 40px;
     display: flex;
     justify-content: center;
