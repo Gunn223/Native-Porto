@@ -6,21 +6,19 @@ body{
 }
 /* Dark mode */
 :root{
-    --primary-color:#ffff;
-    --secondary-color:rgb(136, 130, 130);
-    --btn:#cfc510bf;
+   --siang :rgb(15, 150, 65);
+   --hitam:rgb(0, 0, 0);
 }
 .dark{
-    --primary-color:rgb(78, 49, 49);
-    --secondary-color:#fff;
-    --btn:#113353;
+    --hitam:#fff;
+    --siang:rgb(16, 16, 89);
 }
 .button{
     height: 28px;
     width:50px;
     border: none;
     border-radius: 20px;
-    background-color:#380a6f;
+    background-color:var(--siang);
 }
 #icon{
     font-size: 20px;
@@ -34,9 +32,8 @@ body{
 /* end Dark mode */
 /* Nav */
 nav{
-    background-color: #380a6f;
-    height: 50px;
-    box-shadow: 0px 4px 15px #000000;
+    background-color:var(--siang);
+   
 }
 ul{
     margin: 0 ;
@@ -53,7 +50,7 @@ li{
 li a{
     text-decoration: none;
     margin-left: 50px;
-    color: white;
+    color:var(--hitam);
     font-weight: 400;
 }
 #logo{
@@ -66,7 +63,7 @@ li a{
 /* End Nav */
 /* Header */
 header{
-    background-color: #380a6f;
+    background-color:var(--siang);
     height: 610px;
     display: flex;
     margin-top: 0;
@@ -78,7 +75,7 @@ header{
     margin-bottom: 100px;
 }
 .content-text .text{
-    color: #fff;
+    color:var(--hitam);
     font-size: 90px;
 }
 .content-text .ubah-text{
@@ -91,7 +88,7 @@ header{
 .ubah-text li {
     list-style-type: none;
     font-size: 60px;
-    color: #fff;
+    color: var(--hitam);
     position: relative;
     right: 12px;
     top: 0px;
@@ -113,8 +110,8 @@ header{
     left: 0;
     height: 85px;
     width: 100%;
-    background-color: #380a6f;
-   border-left: 1px solid #ffff;
+    background-color: var(--siang);
+   border-left: 1px solid var(--hitam);
    padding: 10px;
    animation: nulis 3s steps(14) infinite;
 }
@@ -131,7 +128,7 @@ header{
     padding: 15px 30px;
     border-radius: 15px;
     border-color: green;
-    color:white;
+    color:var(--hitam);
     text-decoration: none;
     font-weight: bold;
     position: absolute;
@@ -139,7 +136,7 @@ header{
 } 
 #btnmore:hover{
     border: 2px solid;
-    border-color: rgb(255, 255, 255);
+    border-color: var(--hitam);
     color: #000000;
     background-color: green;
     transition: all 0.4s;
